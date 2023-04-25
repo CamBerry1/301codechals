@@ -18,6 +18,8 @@ hour=`date +%H`
 minute=`date +%M`
 second=`date +%S`
 datetime="$month$day$year|$hour$minute$second"
+# datetime=`date "+%Y%m%d_%H%M%S"`
+# cleaner code ^ for datetime declaration
 
 # Declare functions
 
