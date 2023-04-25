@@ -37,6 +37,9 @@ echo "$datetime syslog file created"
 # I tried using append to change the filename to current date/time without creating a new text file but couldn't figure it out and now I'm going to bed
 
 
+
+
+
 # Notes:
 
 # how to show time/date
