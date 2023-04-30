@@ -2,7 +2,7 @@
 
 # Script: 301 Code Challenge 03
 # Author: Cameron Berry
-# Date of last revision:
+# Date of last revision: 4/30/23
 # Purpose: Prompts user for input directory path.
 #          Prompts user for input permissions number (e.g. 777 to perform a chmod 777)
 #          Navigates to the directory input by the user and changes all files inside it to the input setting.
