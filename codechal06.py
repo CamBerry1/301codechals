@@ -15,26 +15,35 @@
 
 # Main
 
+# load the os module
 import os
 
+# specify bash commands and input into variables
 user = os.system('whoami')
 ip = os.system('ip a')
 hardware = os.system('lshw -short')
 
+# print variables
 print(user)
 print(ip)
 print(hardware)
 
 # Stretch Goals (using subprocess instead of os)
 
+# load the subprocess module
 import subprocess
 
+# specify bash commands and input into variables
 user = subprocess.run('whoami')
 ip = subprocess.run(['ip', 'a'])
 hardware = subprocess.run(['lshw', '-short'])
 
+# print variables
 print(user)
 print(ip)
 print(hardware)
 
 # End
+
+# So, I know we're learning, but is using a print commands redundant?
+# the os.system and subprocess.run commands already print output to the console
