@@ -8,9 +8,12 @@
 #          Print the sixth through tenth element of the list.
 #          Change the value of the seventh element to “onion”.
 
+import time
+
 # Define variables
 
 # cheese list
+
 myfavoritecheeses = ["gouda", "mozzarella", "parmesan", "chedder", "swiss", "provalone", "pepperjack", "gruyere", "pecorino", "string"]
 
 # Define functions
@@ -37,6 +40,27 @@ yourfavorite = input("What is your favorite cheese? ")
 myfavoritecheeses.append(yourfavorite)
 # print input
 print(myfavoritecheeses[10], "is good too!")
+input()
+# copy list
+cheeselist = myfavoritecheeses.copy()
+# clear og list
+myfavoritecheeses.clear()
+# sort 'cheeselist' alphabetically
+cheeselist.sort()
+print(cheeselist)
+# waits .5 seconds before printing next line
+time.sleep(0.5)
+# dancing cheeselist
+cheeselist.reverse()
+print(cheeselist)
+time.sleep(0.5)
+cheeselist.reverse()
+print(cheeselist)
+time.sleep(0.5)
+cheeselist.reverse()
+print(cheeselist)
+time.sleep(0.5)
+print("Cheese is fun")
 
 # End
 
