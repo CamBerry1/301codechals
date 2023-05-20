@@ -72,7 +72,7 @@ else:
 
 sleepclear(2)
 
-# user can only move on after getting 2 right answers above
+# user can only move on after getting both right answers above
 if movie.lower() == favmovie.lower() and number_int == 42:
     pass
 else:
@@ -82,7 +82,7 @@ else:
 
 print("Last one")
 
-time.sleep(1)
+sleepclear(2)
 
 answer = input("What has 4 letters, never has 5 letters, sometimes has 9 letters, and occasionally has 12 letters: ")
 
@@ -97,16 +97,17 @@ if answerlower != "yes":
         answerlower = answer.lower()
     else:
         pass
-
-# if all questions are answered correctly
-if movie.lower() == favmovie.lower() and number_int == 42 and answerlower == "yes":
-    pass
-else:
-    print("Whelp")
-    time.sleep(2)
-    print("Thanks for playing!")
-    time.sleep(2)
-    exit()
+# if all questions are answered correctly, move on
+    if movie.lower() == favmovie.lower() and number_int == 42 and answerlower == "yes":
+        pass
+# exit path if wrong answer
+    else:
+        sleepclear(1)
+        print("Whelp")
+        time.sleep(2)
+        print("Thanks for playing!")
+        time.sleep(2)
+        exit()
 
 os.system('clear')
 
