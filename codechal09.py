@@ -2,7 +2,7 @@
 
 # Script: Ops 301 Challenge 09
 # Author: Cameron Berry
-# Date of last revision: 
+# Date of last revision: 5/20/23
 # Purpose: Create if statements using these logical conditionals below. Each statement should print information to the screen depending on if the condition is met.
 #           - Equals: a == b
 #           - Not Equals: a != b
