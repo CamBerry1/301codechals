@@ -91,12 +91,13 @@ answerlower = answer.lower()
 
 # gives player another chance with string "i don't know"
 if answerlower != "yes":
-    if answerlower.lower() == "i don't know":
+    if answerlower == "i don't know":
         print("(hint: it's not a question)")
         answer = input("Try again: ")
         answerlower = answer.lower()
     else:
         pass
+
 # if all questions are answered correctly, move on
 if movie.lower() == favmovie.lower() and number_int == 42 and answerlower == "yes":
     pass
