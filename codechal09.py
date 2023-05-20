@@ -98,16 +98,16 @@ if answerlower != "yes":
     else:
         pass
 # if all questions are answered correctly, move on
-    if movie.lower() == favmovie.lower() and number_int == 42 and answerlower == "yes":
-        pass
+if movie.lower() == favmovie.lower() and number_int == 42 and answerlower == "yes":
+    pass
 # exit path if wrong answer
-    else:
-        sleepclear(1)
-        print("Whelp")
-        time.sleep(2)
-        print("Thanks for playing!")
-        time.sleep(2)
-        exit()
+else:
+    sleepclear(1)
+    print("Whelp")
+    time.sleep(2)
+    print("Thanks for playing!")
+    time.sleep(2)
+    exit()
 
 os.system('clear')
 
