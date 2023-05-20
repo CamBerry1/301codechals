@@ -48,7 +48,7 @@ if movie.lower() == favmovie.lower():
 else:
     print("You're wrong")
     time.sleep(1)
-    print("It's", favmovie)
+    print(f"It's {favmovie}")
     time.sleep(1)
     print("But let's move on")
 
