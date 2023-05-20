@@ -32,8 +32,7 @@ favmovie = "Back to the Future"
 
 # sleeps for specified time and clears the screen
 def sleepclear(sleep):
-    timeint = int(sleep)
-    time.sleep(timeint)
+    time.sleep(sleep)
     os.system('clear')
 
 # Main
@@ -42,19 +41,18 @@ os.system('clear')
 
 movie = input("Hey there! What's the greatest movie of all time? ")
 
-# *.lower() converts input to lowercase, removing case sensitivity
+# looking for a match to favmovie variable
+# *.lower() converts input to lowercase, skirting case sensitivity
 if movie.lower() == favmovie.lower():
     print("I knew I liked you")
-    time.sleep(1)
 else:
     print("You're wrong")
     time.sleep(1)
     print("It's", favmovie)
     time.sleep(1)
     print("But let's move on")
-    time.sleep(1)
 
-sleepclear(1)
+sleepclear(2)
 
 print("Let's try something else")
 
@@ -64,6 +62,7 @@ number = input("Pick a number between 1-100: ")
 # int() converts the string into an integer
 number_int = int(number)
 
+# actions for any integer entered
 if number_int <= 1 or number_int >= 100:
     print("Did you even read the instructions?")
 elif number_int == 42:
@@ -73,11 +72,21 @@ else:
 
 sleepclear(2)
 
+# user can only move on after getting 2 right answers above
+if movie.lower() == favmovie.lower() and number_int == 42:
+    pass
+else:
+    print("Better luck next time!")
+    sleepclear(3)
+    exit()
+
 print("Last one")
+
 time.sleep(1)
 
 answer = input("What has 4 letters, never has 5 letters, sometimes has 9 letters, and occasionally has 12 letters: ")
 
+# again, replacing the variable in order to skirt case sensitivity
 answerlower = answer.lower()
 
 # gives player another chance with string "i don't know"
@@ -101,39 +110,31 @@ else:
 
 os.system('clear')
 
-# dancing kirby + the paswwrod
+# dancing kirby + the paswword
 print("<(^-^<)")
 print("The password is 'password'")
-time.sleep(0.5)
-os.system('clear')
+sleepclear(0.5)
 print("^(^-^)^")
 print("The password is 'password'")
-time.sleep(0.5)
-os.system('clear')
+sleepclear(0.5)
 print("(>^-^)>")
 print("The password is 'password'")
-time.sleep(0.5)
-os.system('clear')
+sleepclear(0.5)
 print("^(^-^)^")
 print("The password is 'password'")
-time.sleep(0.5)
-os.system('clear')
+sleepclear(0.5)
 print("<(^-^<)")
 print("The password is 'password'")
-time.sleep(0.5)
-os.system('clear')
+sleepclear(0.5)
 print("(>^-^)>")
 print("The password is 'password'")
-time.sleep(0.5)
-os.system('clear')
+sleepclear(0.5)
 print("<(^-^<)")
 print("The password is 'password'")
-time.sleep(0.5)
-os.system('clear')
+sleepclear(0.5)
 print("(>^-^)>")
 print("The password is 'password'")
-time.sleep(0.5)
-os.system('clear')
+sleepclear(0.5)
 print("^(^-^)^")
 print("The password is 'password'")
 time.sleep(1)
