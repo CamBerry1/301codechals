@@ -2,7 +2,7 @@
 
 # Script: Ops 301 Code Challenge 04
 # Author: Cameron Berry
-# Date of last revision: 
+# Date of last revision: 5/24/23
 # Purpose: - Create a bash script that launches a menu system with the following options:
 #             - Hello world (prints "Hello world!" to the screen)
 #             - Ping self (pings this computer's loopback address)
