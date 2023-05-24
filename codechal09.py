@@ -140,3 +140,5 @@ sleepclear(0.5)
 print("^(^-^)^")
 print("The password is 'password'")
 time.sleep(2)
+
+# End
