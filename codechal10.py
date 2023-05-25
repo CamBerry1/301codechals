@@ -26,7 +26,7 @@ file = "this_file_will_be_deleted_as_soon_as_the_script_is_done_running_so_it_do
 with open(file, "w") as text:
     text.write("This is the first line of text in a new file\n")
     text.write("I can write anything here.\n")
-    text.write("You'll never get a chance to see it anyway.")
+    text.write("You'll never see it anyway.")
 
 with open(file, "r") as text:
     first_line = text.readline()
