@@ -29,8 +29,7 @@ with open(file, "w") as text:
     text.write("You'll never see it anyway.")
 
 with open(file, "r") as text:
-    first_line = text.readline()
-    print(first_line)
+    print(text.readline())
 
 os.remove(file)
 
